@@ -170,32 +170,16 @@ We have fine tuned a NER model, and ran sentiment analysis in order to accuratel
 
 We make use of fine-tuned BERT models in the classification and extraction of information from car sales audio transcripts. In this regard, fine-tuning pre-trained BERT models on specific datasets for customer objections and company policies proves very accurate in a classification task.
 
-\_" One of the most revolutionary aspects of recent NLP progress for BERT models is the capability to be fine-tuned for specific tasks" Raffel et al. 2020.
 
 ### Labeling and Annotating Conversations
 
 The scripts `label_customer_objections.py` and `label_company_policies.py` are used to manually label and annotate the conversation files in chunks. The scripts break down the transcripts into manageable chunks, asking the user to label each chunk in such a way that the annotation is effective towards enhancing user-friendliness.
 
-_"Merging human-in-the-loop approaches with machine learning models can enable more accurate and contextual labeling of conversation data" (Kumar et al., 2020)._
 
 ### Data Extraction and Analysis
 
 Data extraction from labeled transcripts is done through the script extract_data.py. This script processes the audio transcripts, chunking them and utilizing the fine-tuned BERT models in classifying the content into customer objections and company policies. Once the data is structured in such a way, further analysis and insights may be derived.
 
-\_ "Automatic information extraction and classification from audio transcripts is an important step towards generating actionable insight in customer service and sales domains" - Zhang et al. (2019) .
-
 **Combining these manual labelings with our automated classification constitutes our solution, providing robustness in the analyses of car sale audio transcripts to businesses for acquiring insight into their customer interactions.**
-
----
-
-### References
-
-In J. Devlin, M.-W. Chang, K. Lee & K. Toutanova, BERT: Pre-training of deep bidirectional transformers for language understanding. arXiv, 1810.04805.
-[Cited in: 10, 12, 12, 12, 14, 26, 26, 26]
-INTRODUCTION TO INFORMATION RETRIEVAL, C. D. Manning, H. Schütze, and P. Raghavan, Cambridge University Press, 2020.
-Y. Liu, M. Ott,.
-Jurafsky, D., & Martin, J. H. (2020). Speech and Language Processing. _Pearson_.
-Mikolov, T., Chen, K., Corrado, G., & Dean, J. (2018). Efficient estimation of word representations in vector space. _arXiv preprint arXiv:1301.3781_.
-Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M.,. & Liu, P. J. (2020). Exploring the limits of transfer learning with a unified text-to-text transformer. _arXiv preprint arXiv:1910.10683_.Kumar, R., Natarajan, M., & Rose, C. (2020). Grounded representations for dialogue modeling. _arXiv preprint arXiv:2003.06084_. Zhang, Y., Wu, Y., & Sun, X. (2019). Enhancing extractive text summarization with sentiment analysis. \_Proceedings of the AAAI Conference on Artificial Intelligence.
 
 ---
